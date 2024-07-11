@@ -9,25 +9,25 @@ public class SiteCadastro extends BasePage
 {
     public String nome = "dsaf";
 
-    @FindBy(name = "")
+    @FindBy(name = "Nome")
         private WebElement txtnomeS;
-    @FindBy(name = "")
+    @FindBy(name = "Login")
         private WebElement txtlogin;
-    @FindBy(name = "")
+    @FindBy(name = "Senha")
         private WebElement txtsenha;
-    @FindBy(name = "")
+    @FindBy(name = "email")
         private WebElement txtemail;
-    @FindBy(name = "")
+    @FindBy(name = "endereco")
         private WebElement txtendereco;
-    @FindBy(name = "")
+    @FindBy(name = "estado")
         private WebElement selestado;
-    @FindBy(name = "")
+    @FindBy(name = "municipio")
         private WebElement selmunicipio;
-    @FindBy(name = "")
+    @FindBy(name = "perfil1")
         private WebElement marperfil1;
-    @FindBy(name = "")
+    @FindBy(name = "perfil2")
         private WebElement marperfil2;
-    @FindBy(name = "")
+    @FindBy(name = "perfil3")
         private WebElement marperfil3;
 
     ////

@@ -1,6 +1,6 @@
-public class    AtualizacaoEmail {
-}
 
+
+public class    AtualizacaoEmail
 package Paginas;
 
 import Base.Site;
@@ -8,6 +8,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
+
+
+
+
+@Test
+public void testAtualizacaoEmail() {
+
+    driver.findElement(By.id("id_do_campo_para_email")).clear();
+    driver.findElement(By.id("id_do_campo_para_email")).sendKeys("novoemail@example.com");
+
+
+    driver.findElement(By.id("id_do_botao_de_confirmacao")).click();
+
+
+    String emailAtualizado = driver.findElement(By.id("id_do_elemento_que_mostra_email_atualizado")).getText();
+    assertEquals(emailAtualizado, "novoemail@example.com", "Email não foi atualizado corretamente.");
+}
 
 public class AtualizacaoSenha extends Site {
 
